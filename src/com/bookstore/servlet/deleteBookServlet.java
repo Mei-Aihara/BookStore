@@ -20,7 +20,11 @@ public class deleteBookServlet extends HttpServlet {
         String id=request.getParameter("id");
         System.out.print(id);
         BookInfo bookInfo=DBCon.queryBookbyId(Integer.valueOf(id));
-        PrintWriter out=response.getWriter();
+        if(DBCon.deleteBook(bookInfo)){
+            response.sendRedirect("../showDetail.jsp");
+        }else {
+            response.sendRedirect("../Error.jsp");
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
