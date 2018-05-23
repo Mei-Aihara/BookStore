@@ -12,5 +12,6 @@
   </head>
   <body>
   $END$
+  <a href="Login.jsp">login</a>
   </body>
 </html>

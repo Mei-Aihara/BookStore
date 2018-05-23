@@ -15,7 +15,7 @@
     <form action="servlet/loginServlet" method="post">
         账户：<input type="text" name="userName"><br>
         密码：<input type="password" name="password"><br>
-        验证码：<input type="text" name="code"><img src="Kaptcha.jpg"/><br>
+        验证码：<input type="text" name="code"><img src="/Kaptcha.jpg"><br>
         <input type="submit" value="登录">
         <input type="reset" value="重置">
     </form>

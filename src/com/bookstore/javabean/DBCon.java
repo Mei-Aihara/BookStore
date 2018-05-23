@@ -26,8 +26,7 @@ public class DBCon {
             Connection connection=getDBcon();
             Statement statement=connection.createStatement();
             ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Account WHERE Account='"+userName+"' AND Password='"+password+"'");
-            while(resultSet!=null){
-                resultSet.next();
+            while(resultSet!=null && resultSet.next()){
                 if(resultSet.getString(2)==null||resultSet.getString(3)==null){  //若查询为空返回错误
                     statement.close();
                     resultSet.close();
