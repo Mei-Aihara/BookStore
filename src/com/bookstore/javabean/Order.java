@@ -2,6 +2,7 @@ package com.bookstore.javabean;
 
 public class Order {
     int id;
+    String orderId;
     String Account;
     String address;
     String time;
@@ -9,6 +10,14 @@ public class Order {
 
     public Order(){
 
+    }
+
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
     }
 
     public int getId() {

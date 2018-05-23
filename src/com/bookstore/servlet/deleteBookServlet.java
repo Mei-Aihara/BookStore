@@ -20,7 +20,9 @@ public class deleteBookServlet extends HttpServlet {
         String id=request.getParameter("id");
         System.out.print(id);
         BookInfo bookInfo=DBCon.queryBookbyId(Integer.valueOf(id));
+        PrintWriter out= response.getWriter();
         if(DBCon.deleteBook(bookInfo)){
+            out.println("<script language='javascript'>alert('书本删除成功！');</script>");
             response.sendRedirect("../showDetail.jsp");
         }else {
             response.sendRedirect("../Error.jsp");

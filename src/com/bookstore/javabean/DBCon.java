@@ -193,4 +193,66 @@ public class DBCon {
             return false;
         }
     }
+
+    public static List<Order> queryOrder(){
+        try{
+            Connection connection=getDBcon();
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Order");
+            ArrayList<Order> orders=new ArrayList<Order>();
+            while(resultSet.next()){
+                Order order=new Order();
+                order.setId(Integer.parseInt(resultSet.getString(1)));
+                order.setOrderId(resultSet.getString(2));
+                order.setAccount(resultSet.getString(3));
+                order.setAddress(resultSet.getString(5));
+                order.setTotalPrice(resultSet.getString(4));
+                order.setTime(resultSet.getString(6));
+                orders.add(order);
+            }
+            return orders;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static Order queryOrderById(int id){
+        try{
+            Connection connection=getDBcon();
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Order WHERE id="+id);
+            Order order=new Order();
+            while(resultSet.next()){
+                order.setId(Integer.parseInt(resultSet.getString(1)));
+                order.setOrderId(resultSet.getString(2));
+                order.setAccount(resultSet.getString(3));
+                order.setTotalPrice(resultSet.getString(4));
+                order.setAddress(resultSet.getString(5));
+                order.setTime(resultSet.getString(6));
+            }
+            return order;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static boolean addOrder(Order order){
+        try{
+            Connection connection=getDBcon();
+            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.Order value (?,?,?,?,?)");
+            preparedStatement.setString(2,order.getOrderId());
+            preparedStatement.setString(3,order.getAccount());
+            preparedStatement.setString(4,order.getTotalPrice());
+            preparedStatement.setString(5,order.getAddress());
+            preparedStatement.setString(6,order.getTime());
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 }
