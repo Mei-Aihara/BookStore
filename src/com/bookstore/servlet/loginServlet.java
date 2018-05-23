@@ -23,8 +23,8 @@ public class loginServlet extends javax.servlet.http.HttpServlet {
                     session.setAttribute("pwd",password);
                     String kaptcha=(String)session.getAttribute(com.google.code.kaptcha.Constants.KAPTCHA_SESSION_KEY);     //获得验证码
                     System.out.print(statement);
-                    if(code.equals(kaptcha)) {
-                        if (statement.equals("admin")) {        //用户输入的验证码和系统提供的验证码进行对比
+                    if(code.equals(kaptcha)) {      //用户输入的验证码和系统提供的验证码进行对比
+                        if (statement.equals("admin")) {
                             response.sendRedirect("../AdminMain.jsp");
                         } else {
                             response.sendRedirect("../CustomerMain.jsp");

@@ -162,7 +162,7 @@ public class DBCon {
     public static boolean editBook(BookInfo bookInfo){
         try{
             Connection connection=getDBcon();
-            PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book SET bookName=?,bookId=?,version=?,bookPrice=?,copyRightId=?,publishingId=?,bookIntro=? where id=?");
+            PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book.bookInfo SET bookName=?,bookId=?,version=?,bookPrice=?,copyRightId=?,publishingId=?,bookIntro=? where id=?");
             preparedStatement.setString(1, String.valueOf(bookInfo.getId()));
             preparedStatement.setString(2,bookInfo.getBookName());
             preparedStatement.setString(3,bookInfo.getBookId());
@@ -242,6 +242,39 @@ public class DBCon {
         try{
             Connection connection=getDBcon();
             PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.Order value (?,?,?,?,?)");
+            preparedStatement.setString(2,order.getOrderId());
+            preparedStatement.setString(3,order.getAccount());
+            preparedStatement.setString(4,order.getTotalPrice());
+            preparedStatement.setString(5,order.getAddress());
+            preparedStatement.setString(6,order.getTime());
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public static boolean deteleOrder(Order order){
+        try{
+            Connection connection=getDBcon();
+            PreparedStatement preparedStatement=connection.prepareStatement("DELETE * FROM book.Order WHERE id=?");
+            preparedStatement.setString(1,String.valueOf(order.getId()));
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public static boolean editOrder(Order order){
+        try{
+            Connection connection=getDBcon();
+            PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book.Order SET orderId=?,Account=?,totalPrice=?,address=?,time=? WHERE id=?");
+            preparedStatement.setString(1,String.valueOf(order.getId()));
             preparedStatement.setString(2,order.getOrderId());
             preparedStatement.setString(3,order.getAccount());
             preparedStatement.setString(4,order.getTotalPrice());

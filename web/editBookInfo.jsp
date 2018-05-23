@@ -18,13 +18,13 @@
 %>
 <form action="/servlet/editBookInfoServlet" method="get">
     <input type="hidden" value=<%=bookInfo.getId()%> name="id">
-    图书名称：<input type="text" value=<%=bookInfo.getBookName()%>><br>
-    图书编号：<input type="text" value=<%=bookInfo.getBookId()%>><br>
-    图书单价：<input type="text" value=<%=bookInfo.getBookPrice()%>><br>
-    图书简介：<input type="text" value=<%=bookInfo.getBookIntro()%>><br>
-    版本：<input type="text" value=<%=bookInfo.getVersion()%>><br>
-    出版社：<input type="text" value=<%=bookInfo.getPublishingId()%>><br>
-    版权：<input type="text" value=<%=bookInfo.getCopyrightId()%>><br>
+    图书名称：<input type="text" value="<%=bookInfo.getBookName()%>" name="bookName"><br>
+    图书编号：<input type="text" value="<%=bookInfo.getBookId()%>" name="bookId"><br>
+    图书单价：<input type="text" value="<%=bookInfo.getBookPrice()%>" name="bookPrice"><br>
+    图书简介：<input type="text" value="<%=bookInfo.getBookIntro()%>" name="bookIntro"><br>
+    版本：<input type="text" value="<%=bookInfo.getVersion()%>" name="version"><br>
+    出版社：<input type="text" value="<%=bookInfo.getPublishingId()%>" name="publishingId"><br>
+    版权：<input type="text" value="<%=bookInfo.getCopyrightId()%>" name="copyRightId"><br>
     <input type="submit" value="更新">
     <input type="reset" value="重置">
 </form>
