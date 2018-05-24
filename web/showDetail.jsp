@@ -35,11 +35,12 @@
                 <td><%=bookInfo.getPublishingId()%></td>
                 <td><%=bookInfo.getCopyrightId()%></td>
                 <td>
-                    <form action="">
+                    <form action="editBookInfo.jsp">
+                        <input type="hidden" value="<%=bookInfo.getId()%>" name="id">
                         <input type="submit" value="修改">
                     </form>
                     <form action="delete.jsp" method="get">
-                        <input type="hidden" name="id" value=<%=bookInfo.getId()%>>
+                        <input type="hidden" name="id" value="<%=bookInfo.getId()%>">
                         <input type="submit" value="删除">
                     </form>
                 </td>

@@ -256,7 +256,7 @@ public class DBCon {
         }
     }
 
-    public static boolean deteleOrder(Order order){
+    public static boolean deleteOrder(Order order){
         try{
             Connection connection=getDBcon();
             PreparedStatement preparedStatement=connection.prepareStatement("DELETE * FROM book.Order WHERE id=?");

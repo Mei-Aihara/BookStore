@@ -27,6 +27,7 @@
         BookInfo bookInfo=DBCon.queryBookbyId(id);
     %>
     <form action="/servlet/deteleBookServlet" onsubmit="x()">
+        <input type="hidden" name="id" value="<%=bookInfo.getId()%>">
         图书名称：<%=bookInfo.getBookName()%><br>
         图书编号：<%=bookInfo.getBookId()%><br>
         图书单价：<%=bookInfo.getBookPrice()%><br>
