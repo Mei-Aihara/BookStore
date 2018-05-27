@@ -60,8 +60,7 @@ public class DBCon {
             Connection connection=getDBcon();
             Statement statement=connection.createStatement();       //查询是否存在用户，避免用户重复注册
             ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Account WHERE Account='"+userName+"'");
-            while (resultSet!=null){
-                resultSet.next();
+            while (resultSet!=null&&resultSet.next()){
                 if (resultSet.getString(2).equals(userName)){
                     statement.close();
                     resultSet.close();
@@ -69,11 +68,11 @@ public class DBCon {
                     return false;
                 }
             }
-            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.Account value (?,?,?,?)");
-            preparedStatement.setString(2,userName);
-            preparedStatement.setString(3,password);
-            preparedStatement.setString(4,email);
-            preparedStatement.setString(5,"customer");
+            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.Account (Account,Password,Email,Identity) value (?,?,?,?)");
+            preparedStatement.setString(1,userName);
+            preparedStatement.setString(2,password);
+            preparedStatement.setString(3,email);
+            preparedStatement.setString(4,"customer");
             preparedStatement.executeUpdate();
             preparedStatement.close();
             connection.close();
@@ -87,14 +86,14 @@ public class DBCon {
     public static boolean addBook(String bookName,String bookId,String version, String bookPrice, String copyrightId, String publishingId, String bookIntro){
         try{
             Connection connection=getDBcon();
-            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.bookInfo value (?,?,?,?,?,?,?)");
-            preparedStatement.setString(2,bookName);
-            preparedStatement.setString(3,bookId);
-            preparedStatement.setString(4,version);
-            preparedStatement.setString(5,bookPrice);
-            preparedStatement.setString(6,copyrightId);
-            preparedStatement.setString(7,publishingId);
-            preparedStatement.setString(8,bookIntro);
+            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.bookInfo (bookName,bookId,version,bookPrice,copyrightId,publishId,bookIntro) value (?,?,?,?,?,?,?)");
+            preparedStatement.setString(1,bookName);
+            preparedStatement.setString(2,bookId);
+            preparedStatement.setString(3,version);
+            preparedStatement.setString(4,bookPrice);
+            preparedStatement.setString(5,copyrightId);
+            preparedStatement.setString(6,publishingId);
+            preparedStatement.setString(7,bookIntro);
             preparedStatement.executeUpdate();
             preparedStatement.close();
             connection.close();
@@ -162,15 +161,15 @@ public class DBCon {
     public static boolean editBook(BookInfo bookInfo){
         try{
             Connection connection=getDBcon();
-            PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book.bookInfo SET bookName=?,bookId=?,version=?,bookPrice=?,copyRightId=?,publishingId=?,bookIntro=? where id=?");
-            preparedStatement.setString(1, String.valueOf(bookInfo.getId()));
-            preparedStatement.setString(2,bookInfo.getBookName());
-            preparedStatement.setString(3,bookInfo.getBookId());
-            preparedStatement.setString(4,bookInfo.getVersion());
-            preparedStatement.setString(5,bookInfo.getBookPrice());
-            preparedStatement.setString(6,bookInfo.getCopyrightId());
-            preparedStatement.setString(7,bookInfo.getPublishingId());
-            preparedStatement.setString(8,bookInfo.getBookIntro());
+            PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book.bookInfo SET bookName=?,bookId=?,version=?,bookPrice=?,copyrightId=?,publishId=?,bookIntro=? where id=?");
+            preparedStatement.setString(8, String.valueOf(bookInfo.getId()));
+            preparedStatement.setString(1,bookInfo.getBookName());
+            preparedStatement.setString(2,bookInfo.getBookId());
+            preparedStatement.setString(3,bookInfo.getVersion());
+            preparedStatement.setString(4,bookInfo.getBookPrice());
+            preparedStatement.setString(5,bookInfo.getCopyrightId());
+            preparedStatement.setString(6,bookInfo.getPublishingId());
+            preparedStatement.setString(7,bookInfo.getBookIntro());
             preparedStatement.executeUpdate();
             preparedStatement.close();
             return true;
@@ -183,7 +182,7 @@ public class DBCon {
     public static boolean deleteBook(BookInfo bookInfo){
         try{
             Connection connection=getDBcon();
-            PreparedStatement preparedStatement=connection.prepareStatement("DELETE from book where id=?");
+            PreparedStatement preparedStatement=connection.prepareStatement("DELETE from book.bookInfo where id=?");
             preparedStatement.setString(1,String.valueOf(bookInfo.getId()));
             preparedStatement.executeUpdate();
             preparedStatement.close();
@@ -241,12 +240,12 @@ public class DBCon {
     public static boolean addOrder(Order order){
         try{
             Connection connection=getDBcon();
-            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.Order value (?,?,?,?,?)");
-            preparedStatement.setString(2,order.getOrderId());
-            preparedStatement.setString(3,order.getAccount());
-            preparedStatement.setString(4,order.getTotalPrice());
-            preparedStatement.setString(5,order.getAddress());
-            preparedStatement.setString(6,order.getTime());
+            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.Order (orderId,Account,totalPrice,address,time) value (?,?,?,?,?)");
+            preparedStatement.setString(1,order.getOrderId());
+            preparedStatement.setString(2,order.getAccount());
+            preparedStatement.setString(3,order.getTotalPrice());
+            preparedStatement.setString(4,order.getAddress());
+            preparedStatement.setString(5,order.getTime());
             preparedStatement.executeUpdate();
             preparedStatement.close();
             return true;
@@ -274,12 +273,12 @@ public class DBCon {
         try{
             Connection connection=getDBcon();
             PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book.Order SET orderId=?,Account=?,totalPrice=?,address=?,time=? WHERE id=?");
-            preparedStatement.setString(1,String.valueOf(order.getId()));
-            preparedStatement.setString(2,order.getOrderId());
-            preparedStatement.setString(3,order.getAccount());
-            preparedStatement.setString(4,order.getTotalPrice());
-            preparedStatement.setString(5,order.getAddress());
-            preparedStatement.setString(6,order.getTime());
+            preparedStatement.setString(6,String.valueOf(order.getId()));
+            preparedStatement.setString(1,order.getOrderId());
+            preparedStatement.setString(2,order.getAccount());
+            preparedStatement.setString(3,order.getTotalPrice());
+            preparedStatement.setString(4,order.getAddress());
+            preparedStatement.setString(5,order.getTime());
             preparedStatement.executeUpdate();
             preparedStatement.close();
             return true;
