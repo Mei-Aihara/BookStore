@@ -12,8 +12,9 @@
 </head>
 <body>
     <div style="text-align: center">
+        <a href="addBookInfo.jsp">添加书籍</a>
         <a href="showDetail.jsp">查看修改书籍</a>
-        <a href="">查看修改订单</a>
+        <a href="showOrder.jsp">查看修改订单</a>
     </div>
 </body>
 </html>

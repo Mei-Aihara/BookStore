@@ -33,8 +33,13 @@
                 <td><%=bookInfo.getBookPrice()%></td>
                 <td><%=bookInfo.getPublishingId()%></td>
                 <td>
-                    <form action="">
+                    <form action="" method="post">
+                        <input type="hidden" value="<%=bookInfo.getId()%>" name="id">
                         <input type="button" value="购买">
+                    </form>
+                    <form action="BookInfo.jsp" method="post">
+                        <input type="hidden" value="<%=bookInfo.getId()%>" name="id">
+                        <input type="submit" value="查看详细信息">
                     </form>
                 </td>
             <%
@@ -42,7 +47,7 @@
             %>
             </tr>
         </table><hr>
-        <a href="">查看购物车</a>
+        <a href="shoppingCart.jsp">查看购物车</a>
         <a href="">查看订单</a>
     </div>
 </body>

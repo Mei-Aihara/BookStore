@@ -25,7 +25,7 @@
         int id=Integer.parseInt(request.getParameter("id"));
         Order order= DBCon.queryOrderById(id);
     %>
-    <form action="" method="post" onsubmit="x()">
+    <form action="/servlet/deleteOrderServlet" method="post" onsubmit="x()">
         <input type="hidden" name="id" value="<%=order.getId()%>">
         订单号：<%=order.getOrderId()%><br>
         下单人：<%=order.getAccount()%><br>

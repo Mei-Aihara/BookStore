@@ -56,6 +56,15 @@
         <servlet-name>deleteOrderServlet</servlet-name>
         <url-pattern>/servlet/deleteOrderServlet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>editOrderServlet</servlet-name>
+        <servlet-class>com.bookstore.servlet.editOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editOrderServlet</servlet-name>
+        <url-pattern>/servlet/editOrderServlet</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>Kaptcha</servlet-name>
