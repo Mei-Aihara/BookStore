@@ -29,6 +29,11 @@
         版权：<%=bookInfo.getCopyrightId()%><br>
         <input type="submit" value="添加购物车">
     </form>
+    <form action="" method="post">
+        <input type="hidden" value="<%=user%>" name="user">
+        <input type="hidden" name="id" value="<%=bookInfo.getId()%>">
+        <input type="submit" value="立即购买">
+    </form>
     <a href="CustomerMain.jsp"><input type="button" value="返回"></a>
 </body>
 </html>

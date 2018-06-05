@@ -50,7 +50,7 @@
 
     <servlet>
         <servlet-name>deleteOrderServlet</servlet-name>
-        <servlet-class>com.bookstore.servlet.deteleOrderServlet</servlet-class>
+        <servlet-class>com.bookstore.servlet.deleteOrderServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>deleteOrderServlet</servlet-name>
@@ -64,6 +64,33 @@
     <servlet-mapping>
         <servlet-name>editOrderServlet</servlet-name>
         <url-pattern>/servlet/editOrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addSCServlet</servlet-name>
+        <servlet-class>com.bookstore.servlet.addSCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addSCServlet</servlet-name>
+        <url-pattern>/servlet/addSCServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editCountServlet</servlet-name>
+        <servlet-class>com.bookstore.servlet.editCountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editCountServlet</servlet-name>
+        <url-pattern>/servlet/editCountServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>deleteSCServlet</servlet-name>
+        <servlet-class>com.bookstore.servlet.deleteSCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteSCServlet</servlet-name>
+        <url-pattern>/servlet/deleteSCSerlvet</url-pattern>
     </servlet-mapping>
 
     <servlet>

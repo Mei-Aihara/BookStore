@@ -193,6 +193,25 @@ public class DBCon {
         }
     }
 
+    public static boolean checkOrderId(String orderId){
+        try{
+            Connection connection=getDBcon();
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Order WHERE orderId='"+orderId+"'");
+            while(resultSet.next()&&resultSet!=null){
+                if(resultSet.getString(2)==null){
+                    return true;
+                }else {
+                    return false;
+                }
+            }
+            return false;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
     public static List<Order> queryOrder(){
         try{
             Connection connection=getDBcon();
@@ -220,7 +239,7 @@ public class DBCon {
         try{
             Connection connection=getDBcon();
             Statement statement=connection.createStatement();
-            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Order WHERE id="+id);
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Order WHERE id='"+id+"'");
             Order order=new Order();
             while(resultSet.next()){
                 order.setId(Integer.parseInt(resultSet.getString(1)));
@@ -258,7 +277,7 @@ public class DBCon {
     public static boolean deleteOrder(Order order){
         try{
             Connection connection=getDBcon();
-            PreparedStatement preparedStatement=connection.prepareStatement("DELETE * FROM book.Order WHERE id=?");
+            PreparedStatement preparedStatement=connection.prepareStatement("DELETE FROM book.Order WHERE id=?");
             preparedStatement.setString(1,String.valueOf(order.getId()));
             preparedStatement.executeUpdate();
             preparedStatement.close();
@@ -285,6 +304,131 @@ public class DBCon {
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
+        }
+    }
+
+    public static boolean addSC(BookInfo bookInfo,String Account){
+        try{
+            Connection connection=getDBcon();
+            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.shopCart (bookName,Account,bookId,bookPrice,num) value (?,?,?,?,?)");
+            preparedStatement.setString(1,bookInfo.getBookName());
+            preparedStatement.setString(2,Account);
+            preparedStatement.setString(3,bookInfo.getBookId());
+            preparedStatement.setString(4,bookInfo.getBookPrice());
+            preparedStatement.setString(5,"1");
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public static List<ShopCart> querySC(){
+        try{
+            Connection connection=getDBcon();
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.shopCart");
+            ArrayList<ShopCart> shopCarts=new ArrayList<ShopCart>();
+            while(resultSet.next()){
+                ShopCart shopCart=new ShopCart();
+                shopCart.setBookName(resultSet.getString(2));
+                shopCart.setAccount(resultSet.getString(3));
+                shopCart.setBookId(resultSet.getString(4));
+                shopCart.setId(Integer.parseInt(resultSet.getString(1)));
+                shopCart.setBookPrice(resultSet.getString(5));
+                shopCart.setNum(resultSet.getString(6));
+                shopCarts.add(shopCart);
+            }
+            statement.close();
+            resultSet.close();
+            connection.close();
+            return shopCarts;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static boolean editSC(int count,ShopCart shopCart,int price){
+        try{
+            Connection connection=getDBcon();
+            PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book.shopCart SET num=?,bookPrice=? WHERE id=?");
+            preparedStatement.setString(1,String.valueOf(count));
+            preparedStatement.setString(2,String.valueOf(price));
+            preparedStatement.setString(3,String.valueOf(shopCart.getId()));
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            connection.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public static ShopCart querySCbyId(String id){
+        try{
+            Connection connection=getDBcon();
+            Statement statement= connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.shopCart WHERE id='"+id+"'");
+            ShopCart shopCart=new ShopCart();
+            while (resultSet.next()){
+                shopCart.setNum(resultSet.getString(6));
+                shopCart.setBookPrice(resultSet.getString(5));
+                shopCart.setAccount(resultSet.getString(3));
+                shopCart.setBookId(resultSet.getString(4));
+                shopCart.setId(Integer.parseInt(resultSet.getString(1)));
+                shopCart.setBookPrice(resultSet.getString(2));
+            }
+            statement.close();
+            resultSet.close();
+            connection.close();
+            return shopCart;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static boolean deleteSC(ShopCart shopCart){
+        try{
+            Connection connection=getDBcon();
+            PreparedStatement preparedStatement=connection.prepareStatement("DELETE FROM book.shopCart WHERE id=?");
+            preparedStatement.setString(1,String.valueOf(shopCart.getId()));
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public static List<ShopCart> querySCbyAccount(String Account){
+        try{
+            Connection connection=getDBcon();
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.shopCart WHERE Account='"+Account+"'");
+            ArrayList<ShopCart> shopCarts=new ArrayList<ShopCart>();
+            while(resultSet.next()){
+                ShopCart shopCart=new ShopCart();
+                shopCart.setBookName(resultSet.getString(2));
+                shopCart.setAccount(resultSet.getString(3));
+                shopCart.setBookId(resultSet.getString(4));
+                shopCart.setId(Integer.parseInt(resultSet.getString(1)));
+                shopCart.setBookPrice(resultSet.getString(5));
+                shopCart.setNum(resultSet.getString(6));
+                shopCarts.add(shopCart);
+            }
+            statement.close();
+            resultSet.close();
+            connection.close();
+            return shopCarts;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 }

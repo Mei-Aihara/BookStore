@@ -23,6 +23,7 @@
                 <td></td>
             </tr>
             <%
+                String user=String.valueOf(session.getAttribute("userName"));
                 List list=DBCon.queryBookInfo();
                 BookInfo bookInfo = null;
                 for(int i=0;i<list.size();i++){
@@ -33,11 +34,13 @@
                 <td><%=bookInfo.getBookPrice()%></td>
                 <td><%=bookInfo.getPublishingId()%></td>
                 <td>
-                    <form action="" method="post">
+                    <form action="/servlet/addSCServlet" method="post">
+                        <input type="hidden" value="<%=user%>" name="user">
                         <input type="hidden" value="<%=bookInfo.getId()%>" name="id">
-                        <input type="button" value="购买">
+                        <input type="button" value="加入购物车">
                     </form>
                     <form action="BookInfo.jsp" method="post">
+                        <input type="hidden" value="<%=user%>" name="user">
                         <input type="hidden" value="<%=bookInfo.getId()%>" name="id">
                         <input type="submit" value="查看详细信息">
                     </form>
@@ -48,7 +51,7 @@
             </tr>
         </table><hr>
         <a href="shoppingCart.jsp">查看购物车</a>
-        <a href="">查看订单</a>
+        <a href="showOrderC.jsp">查看订单</a>
     </div>
 </body>
 </html>
