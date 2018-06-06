@@ -34,11 +34,6 @@
                 <td><%=bookInfo.getBookPrice()%></td>
                 <td><%=bookInfo.getPublishingId()%></td>
                 <td>
-                    <form action="" method="post">
-                        <input type="hidden" value="<%=user%>" name="user">
-                        <input type="hidden" value="<%=bookInfo.getId()%>" name="id">
-                        <input type="button" value="购买">
-                    </form>
                     <form action="BookInfo.jsp" method="post">
                         <input type="hidden" value="<%=user%>" name="user">
                         <input type="hidden" value="<%=bookInfo.getId()%>" name="id">

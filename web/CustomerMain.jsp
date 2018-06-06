@@ -34,11 +34,6 @@
                 <td><%=bookInfo.getBookPrice()%></td>
                 <td><%=bookInfo.getPublishingId()%></td>
                 <td>
-                    <form action="/servlet/addSCServlet" method="post">
-                        <input type="hidden" value="<%=user%>" name="user">
-                        <input type="hidden" value="<%=bookInfo.getId()%>" name="id">
-                        <input type="button" value="加入购物车">
-                    </form>
                     <form action="BookInfo.jsp" method="post">
                         <input type="hidden" value="<%=user%>" name="user">
                         <input type="hidden" value="<%=bookInfo.getId()%>" name="id">

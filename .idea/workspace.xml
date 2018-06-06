@@ -7,25 +7,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea0202cc-1f3a-4f8e-9384-8e3c4f0053fc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/bookstore/javabean/ShopCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bookstore/servlet/addSCServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bookstore/servlet/deleteSCServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/bookstore/servlet/editCountServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/Buy.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bookstore/javabean/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bookstore/servlet/addOrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/OrderDetail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/Success.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/BookInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/BookInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/CustomerMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/CustomerMain.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/javabean/DBCon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/javabean/DBCon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/servlet/deteleOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/javabean/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/javabean/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/javabean/ShopCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/javabean/ShopCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/servlet/editCountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/servlet/editCountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/servlet/editOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/classes/com/bookstore/servlet/editOrderServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/shoppingCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/shoppingCart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/unnamed/showOrderC.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/unnamed/showOrderC.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/javabean/DBCon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/javabean/DBCon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/servlet/deteleOrderServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/javabean/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/javabean/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/javabean/ShopCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/javabean/ShopCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/servlet/editCountServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/servlet/editCountServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/servlet/editOrderServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BookStore/com/bookstore/servlet/editOrderServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bookstore/javabean/DBCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bookstore/javabean/DBCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bookstore/servlet/deteleOrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bookstore/servlet/deleteOrderServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/BookInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/BookInfo.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bookstore/javabean/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bookstore/javabean/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bookstore/servlet/editOrderServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bookstore/servlet/editOrderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Buy.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/Buy.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/CustomerMain.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/CustomerMain.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/shoppingCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/shoppingCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/showOrderC.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/showOrderC.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,69 +48,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DBCon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/DBCon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="207" column="25" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
+            <state relative-caret-position="229">
+              <caret line="464" column="106" selection-start-line="464" selection-start-column="106" selection-end-line="464" selection-end-column="106" />
               <folding>
-                <element signature="e#13367#13377#0" expanded="true" />
-                <element signature="e#16767#16777#0" expanded="true" />
+                <element signature="e#19714#19727#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookInfo.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/BookInfo.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showOrderC.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="showOrderC.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/showOrderC.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            <state relative-caret-position="306">
+              <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerMain.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/CustomerMain.jsp">
+      <file leaf-file-name="OrderDetail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/OrderDetail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shoppingCart.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/shoppingCart.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Buy.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/Buy.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+            <state relative-caret-position="630">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -110,11 +81,96 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="editCountServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/editCountServlet.java">
+      <file leaf-file-name="OrderDetail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/OrderDetail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="252">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#326#327#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#392#393#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#640#641#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+                <element signature="e#788#789#0" expanded="true" />
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#930#931#0" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1054#1055#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerMain.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/CustomerMain.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shoppingCart.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/shoppingCart.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Buy.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/Buy.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="64" column="63" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addOrderServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/addOrderServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-208">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editOrderServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/editOrderServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Order.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <folding>
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,7 +194,6 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/Login.jsp" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/deleteBookServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/bookstore/javabean/Order.java" />
         <option value="$PROJECT_DIR$/web/editBookInfo.jsp" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/editBookInfoServlet.java" />
         <option value="$PROJECT_DIR$/web/LoginTest.jsp" />
@@ -151,23 +206,28 @@
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/deteleOrderServlet.java" />
         <option value="$PROJECT_DIR$/web/AdminMain.jsp" />
         <option value="$PROJECT_DIR$/web/deleteOrder.jsp" />
-        <option value="$PROJECT_DIR$/src/com/bookstore/servlet/editOrderServlet.java" />
         <option value="$PROJECT_DIR$/web/editOrder.jsp" />
-        <option value="$PROJECT_DIR$/web/showOrderC.jsp" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/loginServlet.java" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/addSCServlet.java" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/deteleSCServlet.java" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/deleteSCServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/buyServlet.java" />
         <option value="$PROJECT_DIR$/src/com/bookstore/javabean/ShopCart.java" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/checkBuyTypeServlet.java" />
-        <option value="$PROJECT_DIR$/web/CustomerMain.jsp" />
         <option value="$PROJECT_DIR$/src/com/bookstore/servlet/editCountServlet.java" />
         <option value="$PROJECT_DIR$/web/shoppingCart.jsp" />
         <option value="$PROJECT_DIR$/web/BookInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/com/bookstore/javabean/DBCon.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/Buy.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bookstore/javabean/Order.java" />
+        <option value="$PROJECT_DIR$/src/com/bookstore/servlet/editOrderServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/bookstore/servlet/addOrderServlet.java" />
+        <option value="$PROJECT_DIR$/web/CustomerMain.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bookstore/javabean/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/web/Success.jsp" />
+        <option value="$PROJECT_DIR$/web/OrderDetail.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bookstore/javabean/DBCon.java" />
+        <option value="$PROJECT_DIR$/web/showOrderC.jsp" />
       </list>
     </option>
   </component>
@@ -194,16 +254,18 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,9 +313,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -424,6 +483,7 @@
       <workItem from="1527819745741" duration="474000" />
       <workItem from="1528080709977" duration="4064000" />
       <workItem from="1528176490629" duration="14632000" />
+      <workItem from="1528265961685" duration="16291000" />
     </task>
     <task id="LOCAL-00001" summary="update some function">
       <created>1527087525718</created>
@@ -457,7 +517,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44031000" />
+    <option name="totallyTimeSpent" value="60322000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -465,7 +525,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32909605" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32822478" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.6160221" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -476,17 +536,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.25752854" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.25649014" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41744548" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3800623" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49221185" visible="true" weight="0.21908316" />
-      <window_info id="Web" order="2" sideWeight="0.5077882" side_tool="true" weight="0.21908316" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49042144" visible="true" weight="0.1652452" />
+      <window_info id="Web" order="2" sideWeight="0.5095785" side_tool="true" weight="0.22206303" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Dependency Viewer" order="7" weight="0.33898306" />
@@ -497,6 +556,7 @@
       <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
     </layout>
     <layout-to-restore>
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32909605" />
@@ -547,34 +607,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="添加顾客页面的功能" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/BookInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1365">
-          <caret line="65" column="14" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/Login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/loginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -609,18 +641,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pom.xml" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/modules.uml" />
-    <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/addBookServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -689,24 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/editOrderServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/editBookInfoServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="25" column="61" lean-forward="true" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/BookInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -721,13 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="22" selection-end-line="93" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -770,13 +769,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/checkBuyTypeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/checkBuyTypeServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/addSCServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -784,31 +777,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/editCountServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/BookInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/shoppingCart.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/editCountServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        <state relative-caret-position="198">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="102" column="22" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/BookInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        <state>
+          <caret column="52" selection-start-column="52" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/showOrderC.jsp">
+    <entry file="file://$PROJECT_DIR$/web/Buy.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+        <state relative-caret-position="352">
+          <caret line="64" column="63" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -819,31 +832,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/editOrderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bookstore/servlet/addOrderServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/shoppingCart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/CustomerMain.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+        <state relative-caret-position="316">
+          <caret line="39" column="60" lean-forward="true" selection-start-line="39" selection-start-column="60" selection-end-line="39" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/Success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#640#641#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#930#931#0" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/OrderDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bookstore/javabean/DBCon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="207" column="25" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
+        <state relative-caret-position="229">
+          <caret line="464" column="106" selection-start-line="464" selection-start-column="106" selection-end-line="464" selection-end-column="106" />
           <folding>
-            <element signature="e#13367#13377#0" expanded="true" />
-            <element signature="e#16767#16777#0" expanded="true" />
+            <element signature="e#19714#19727#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/Buy.jsp">
+    <entry file="file://$PROJECT_DIR$/web/showOrderC.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="54" column="65" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
         </state>
       </provider>
     </entry>

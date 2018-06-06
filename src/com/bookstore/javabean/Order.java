@@ -2,7 +2,7 @@ package com.bookstore.javabean;
 
 public class Order {
     int id;
-    String orderId;
+    int orderId;
     String Account;
     String address;
     String time;
@@ -12,11 +12,11 @@ public class Order {
 
     }
 
-    public String getOrderId() {
+    public int getOrderId() {
         return orderId;
     }
 
-    public void setOrderId(String orderId) {
+    public void setOrderId(int orderId) {
         this.orderId = orderId;
     }
 

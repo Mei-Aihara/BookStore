@@ -92,6 +92,15 @@
         <servlet-name>deleteSCServlet</servlet-name>
         <url-pattern>/servlet/deleteSCSerlvet</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>addOrderServlet</servlet-name>
+        <servlet-class>com.bookstore.servlet.addOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addOrderServlet</servlet-name>
+        <url-pattern>/servlet/addOrderServlet</url-pattern>
+    </servlet-mapping>
 
     <servlet>
         <servlet-name>Kaptcha</servlet-name>

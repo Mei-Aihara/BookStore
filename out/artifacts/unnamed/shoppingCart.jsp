@@ -25,6 +25,7 @@
             </tr>
             <%
                 List list= DBCon.querySC();
+                String name=String.valueOf(session.getAttribute("userName"));
                 ShopCart shopCart=null;
                 for(int i=0;i<list.size();i++){
                     shopCart=(ShopCart)list.get(i);
@@ -45,7 +46,9 @@
                         <input type="hidden" value="<%=shopCart.getId()%>" name="id">
                         <input type="submit" value="删除">
                     </form>
-                    <form action="" method="post">
+                    <form action="Buy.jsp" method="post">
+                        <input type="hidden" value="<%=name%>" name="account">
+                        <input type="hidden" value="0" name="if">
                         <input type="hidden" value="<%=shopCart.getId()%>" name="id">
                         <input type="submit" value="购买">
                     </form>
@@ -53,10 +56,13 @@
             </tr>
             <%
                 }
-                String name=String.valueOf(session.getAttribute("userName"));
-                System.out.println(name);
             %>
         </table>
+        <form action="Buy.jsp" method="post">
+            <input type="hidden" value="<%=name%>" name="account">
+            <input type="hidden" value="1" name="if">
+            <input type="submit" value="全部购买">
+        </form>
     </div>
 </body>
 </html>

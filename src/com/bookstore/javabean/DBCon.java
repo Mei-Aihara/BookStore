@@ -193,19 +193,26 @@ public class DBCon {
         }
     }
 
-    public static boolean checkOrderId(String orderId){
+    public static boolean checkOrderId(int orderId){
         try{
             Connection connection=getDBcon();
             Statement statement=connection.createStatement();
             ResultSet resultSet=statement.executeQuery("SELECT * FROM book.Order WHERE orderId='"+orderId+"'");
+            int count=0;
             while(resultSet.next()&&resultSet!=null){
-                if(resultSet.getString(2)==null){
-                    return true;
+                String oId=resultSet.getString(2);
+                System.out.print(oId);
+                if(Integer.parseInt(resultSet.getString(2))==orderId){
+                    count=1;
                 }else {
-                    return false;
+                    count=0;
                 }
             }
-            return false;
+            if(count==0){
+                return false;
+            }else {
+                return true;
+            }
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
@@ -221,7 +228,7 @@ public class DBCon {
             while(resultSet.next()){
                 Order order=new Order();
                 order.setId(Integer.parseInt(resultSet.getString(1)));
-                order.setOrderId(resultSet.getString(2));
+                order.setOrderId(Integer.parseInt(resultSet.getString(2)));
                 order.setAccount(resultSet.getString(3));
                 order.setAddress(resultSet.getString(5));
                 order.setTotalPrice(resultSet.getString(4));
@@ -243,7 +250,7 @@ public class DBCon {
             Order order=new Order();
             while(resultSet.next()){
                 order.setId(Integer.parseInt(resultSet.getString(1)));
-                order.setOrderId(resultSet.getString(2));
+                order.setOrderId(Integer.parseInt(resultSet.getString(2)));
                 order.setAccount(resultSet.getString(3));
                 order.setTotalPrice(resultSet.getString(4));
                 order.setAddress(resultSet.getString(5));
@@ -260,7 +267,7 @@ public class DBCon {
         try{
             Connection connection=getDBcon();
             PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.Order (orderId,Account,totalPrice,address,time) value (?,?,?,?,?)");
-            preparedStatement.setString(1,order.getOrderId());
+            preparedStatement.setString(1,String.valueOf(order.getOrderId()));
             preparedStatement.setString(2,order.getAccount());
             preparedStatement.setString(3,order.getTotalPrice());
             preparedStatement.setString(4,order.getAddress());
@@ -293,7 +300,7 @@ public class DBCon {
             Connection connection=getDBcon();
             PreparedStatement preparedStatement=connection.prepareStatement("UPDATE book.Order SET orderId=?,Account=?,totalPrice=?,address=?,time=? WHERE id=?");
             preparedStatement.setString(6,String.valueOf(order.getId()));
-            preparedStatement.setString(1,order.getOrderId());
+            preparedStatement.setString(1,String.valueOf(order.getOrderId()));
             preparedStatement.setString(2,order.getAccount());
             preparedStatement.setString(3,order.getTotalPrice());
             preparedStatement.setString(4,order.getAddress());
@@ -380,7 +387,7 @@ public class DBCon {
                 shopCart.setAccount(resultSet.getString(3));
                 shopCart.setBookId(resultSet.getString(4));
                 shopCart.setId(Integer.parseInt(resultSet.getString(1)));
-                shopCart.setBookPrice(resultSet.getString(2));
+                shopCart.setBookName(resultSet.getString(2));
             }
             statement.close();
             resultSet.close();
@@ -426,6 +433,48 @@ public class DBCon {
             resultSet.close();
             connection.close();
             return shopCarts;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static boolean addOrderDetail(int orderId,ShopCart shopCart){
+        try{
+            Connection connection=getDBcon();
+            PreparedStatement preparedStatement=connection.prepareStatement("INSERT INTO book.OrderDetail (bookName,bookPrice,orderId,bookId,num) value (?,?,?,?,?)");
+            preparedStatement.setString(1,shopCart.getBookName());
+            preparedStatement.setString(2,shopCart.getBookPrice());
+            preparedStatement.setString(3,String.valueOf(orderId));
+            preparedStatement.setString(4,shopCart.getBookId());
+            preparedStatement.setString(5,shopCart.getNum());
+            preparedStatement.executeUpdate();
+            preparedStatement.close();
+            connection.close();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public static List<OrderDetail> queryOrderDetail(String orderId){
+        try{
+            Connection connection=getDBcon();
+            Statement statement=connection.createStatement();
+            ResultSet resultSet=statement.executeQuery("SELECT * FROM book.OrderDetail WHERE id='"+orderId+"'");
+            ArrayList<OrderDetail> orderDetails=new ArrayList<OrderDetail>();
+            while(resultSet.next()){
+                OrderDetail orderDetail=new OrderDetail();
+                orderDetail.setBookId(resultSet.getString(5));
+                orderDetail.setBookName(resultSet.getString(2));
+                orderDetail.setBookPrice(resultSet.getString(3));
+                orderDetail.setNum(resultSet.getString(6));
+                orderDetail.setOrderId(resultSet.getString(4));
+                orderDetail.setId(Integer.parseInt(resultSet.getString(1)));
+                orderDetails.add(orderDetail);
+            }
+            return orderDetails;
         } catch (SQLException e) {
             e.printStackTrace();
             return null;

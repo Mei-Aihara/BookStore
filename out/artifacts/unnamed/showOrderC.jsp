@@ -35,12 +35,15 @@
                 <td><%=order.getTotalPrice()%></td>
                 <td><%=order.getTime()%></td>
                 <td>
-                    <form action="" method="post">
+                    <form action="OrderDetail.jsp" method="post">
                         <input type="hidden" value="<%=order.getId()%>" name="id">
                         <input type="submit" value="查看详细">
                     </form>
                 </td>
             </tr>
+            <%
+                }
+            %>
         </table>
     </div>
 </body>

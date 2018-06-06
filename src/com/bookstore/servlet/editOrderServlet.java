@@ -20,7 +20,7 @@ public class editOrderServlet extends HttpServlet {
         order.setTime(request.getParameter("time"));
         order.setTotalPrice(request.getParameter("totalPrice"));
         order.setAddress(request.getParameter("address"));
-        order.setOrderId(request.getParameter("orderId"));
+        order.setOrderId(Integer.parseInt(request.getParameter("orderId")));
         order.setAccount(request.getParameter("Account"));
         PrintWriter out = response.getWriter();
         if (DBCon.editOrder(order)) {
